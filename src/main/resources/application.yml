@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/db_gpay?serverTimezone=UTC&characterEncoding=UTF-8&useSSL=false
+    username: gpay
+    password: dpraaygpolne212!$$
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        naming:
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+      springframework: INFO
